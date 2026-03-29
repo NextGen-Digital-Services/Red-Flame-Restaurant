@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0b0b0b;
+  color: white;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ff3c00;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.book-btn {
+  background: #ff3c00;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Hero */
+
+.hero {
+  height: 100vh;
+  background: url("img1.jpg") center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  padding: 50px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #ff3c00;
+  border: none;
+  border-radius: 30px;
+  color: wheat;
+  cursor: pointer;
+}
+
+/* Glass Effect */
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* About */
+
+.about {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about-content {
+  padding: 40px;
+  border-radius: 20px;
+}
+
+/* Menu */
+
+.menu {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.menu-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* Contact */
+
+.contact {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact-box {
+  padding: 40px;
+  border-radius: 20px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: black;
+}
+
+.hero h1 {
+  color: black;
+}
+
+.hero p {
+  color: darkslategrey;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero h1 {
+    color: black;
+  }
+
+  .hero p {
+    color: darkslategrey;
+  }
+
+  .menu-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -33,7 +33,7 @@ document.querySelector(".contact .btn").addEventListener("click", function () {
 // WhatsApp Button Function
 
 function whatsappOrder() {
-  let phone = "919873800080";
+  let phone = "9873414188";
 
   let message = "Hello Red Flame Restaurant, I want to place an order.";
 
